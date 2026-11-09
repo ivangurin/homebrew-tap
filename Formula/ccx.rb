@@ -4,14 +4,14 @@ class Ccx < Formula
   version "v0.4.0"
   on_arm do
     url "https://github.com/ivangurin/ccx/releases/download/#{version}/ccx-mac-arm64-#{version}.zip"
-    sha256 "ccc0e715d43e7a1fcc095936c9decdc1dcdeb1fd3a0f9e267d918f7cf8ad3875"
+    sha256 "99f69587be01d1df58e3e6da7f999f8d0ad7cfd171828337b69f65b9e21a58b0"
   end
   on_intel do
     url "https://github.com/ivangurin/ccx/releases/download/#{version}/ccx-mac-amd64-#{version}.zip"
-    sha256 "73f87bce01f9362585536e5e9cd8ad5266031645b1b0fa5b76aa46052517cc18"
+    sha256 "677fc5445e6ea447ec38dffefcd0cffa251ed3af7fc8438a5903259342f6fc87"
   end
   def install
-    bin "ccx"
+    bin.install "ccx"
   end
   test do
     assert_match version.to_s, shell_output("#{bin}/ccx version")
