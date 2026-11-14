@@ -1,14 +1,14 @@
 class Ccx < Formula
   desc "Switch Claude Code LLM providers"
   homepage "https://github.com/ivangurin/ccx"
-  version "0.9.0"
+  version "0.10.0"
   on_arm do
     url "https://github.com/ivangurin/ccx/releases/download/v#{version}/ccx-mac-arm64-v#{version}.zip"
-    sha256 "beaa4f2dca1410018dfbb687ffa7feeec62d6430eea0a4fd3bcac3db9b0afeb9"
+    sha256 "6dac7f4770ae01ff3cd824e0f8272217945cef6bdd20a12839bdabe0fb6e162e"
   end
   on_intel do
     url "https://github.com/ivangurin/ccx/releases/download/v#{version}/ccx-mac-amd64-v#{version}.zip"
-    sha256 "c9fb01b832507e1a4f16647b50386f8255dd5376ed5fd17f049479715b725917"
+    sha256 "941486a6f4adbfa007b7829b603b1f370729428872a951783e92b543718871f5"
   end
   def install
     bin.install "ccx"
